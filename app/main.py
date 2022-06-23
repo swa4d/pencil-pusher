@@ -28,7 +28,7 @@ import random
 ai1 = aitextgen(model_folder="fairytale_model/", to_gpu=False)
 ai2 = aitextgen(model_folder="scifi_model/", to_gpu=False)
 ai3 = aitextgen(model_folder="humor_model/", to_gpu=False)
-#ai4 = aitextgen(model_folder="horror_model/", to_gpu=False)
+# ai4 = aitextgen(model_folder="horror_model/", to_gpu=False)
 ai5 = aitextgen(model_folder="fantasy_model/", to_gpu=False)
 
 # setup the webserver
@@ -84,12 +84,10 @@ def generate_text():
     prompt = request.form['prompt']
     genre = request.form['genre']
     wc = request.form['wordcount']
-    intwc = float(round(wc))
+    intwc= 200
     aiToGen = ""
-    if wc is None:
-        intwc = 200
-    elif intwc < 50 or intwc > 600:
-        intwc = 200
+    if (wc != ""):
+        intwc = int(wc)
     if genre == "Fairytale":
         aiToGen = ai1
     elif genre == "Sci-Fi":
@@ -106,7 +104,7 @@ def generate_text():
             batch_size=3,
             prompt=str(prompt),
             max_length=intwc,
-            temperature=0.7,
+            temperature=0.9,
             return_as_list=True
         )
 

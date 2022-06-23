@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Pencil Pusher - Home</title>
+        <title>Pencil Pusher - About</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="{{ url_for('static',filename='/assets/favicon.ico') }}" />
         <!-- Font Awesome icons (free version)-->
@@ -27,66 +27,62 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="#services">Overview</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#portfolio">Team</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio">Frequently Asked Questions</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">Our Journey</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
-                        <li class="nav-item"><a class="nav-link" href={{ url_for('about_proj')}}>About</a></li>
+                        <li class="nav-item"><a class="nav-link" href={{ url_for('home')}}>Home</a></li>
                         <li class="nav-item"><a class="nav-link" href={{ url_for('results')}}>Try It</a></li>
                     </ul>
-               </div>
+                </div>
             </div>
         </nav>
         <!-- Masthead-->
         <header class="masthead">
             <div class="container">
-                <div class="masthead-subheading">Pencil Pusher:</div>
-                <div class="masthead-heading text-uppercase">Ai Short Story Generator</div>
-            </div>
+                <div class="masthead-heading text-uppercase ">About the Project</div>
+              <p class="muted-text">
+                Introducing the Pencil Pusher: The AI Short Story Generator! Our group has built various models that generate short stories based off of six genres: fantasy, horror, fairy tale, humor, and sci-fi. Each of our models use a variety of databases based off of which genre is chosen to create a short story for you!
+              </p>
+              <p class="muted-text">
+                 Our group has used the programming languages Python, CSS, HTML, and the transformers GPT-2 and GPT-Neo, as well as datasets that we found on Google and Kaggle.
+              </p>
+          </div>
+          <br>
         </header>
-        <!-- Overview-->
-        <section class="page-section" id="services">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Overview</h2>
-                    <h3 class="section-subheading text-muted">The basics of our generator</h3>
-                </div>
-                <div class="row text-center">
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-lightbulb fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">Our Goal</h4>
-                        <p class="text-muted">The Pencil Pusher project was formed from the fact that many people, even writers and artists, often find themselves lacking in ideas in their day-to-day lives. By providing them with free, imaginative short stories created with a prompt and a click of a button, our product floods the user with inspiration, allowing them to get past any mental block.</p>
-                    </div>
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-microchip fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">Technology Used</h4>
-                        <p class="text-muted">This product was created using the programming language Python, the transformer GPT-2, as well as datasets that we found on Google and Kaggle. The website was made using HTML and CSS.</p>
-                    </div>
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-clone fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">Multiple Models</h4>
-                        <p class="text-muted">Our team spent time building various AI models that generate short stories based off of six genres: fantasy, horror, fairytale, humor, and science fiction. Each of our models is trained on a variety of databases depending on which genre it is in charge of, all to create amazing short stories for you!</p>
-                    </div>
+              <!-- Other Option(s): 
+<p class="muted-text">
+                Introducing the Pencil Pusher: The AI Short Story Generator!
+              </p>
+              <p class="muted-text">
+                 Follow our group as we go over the most frequently asked questions and the amazing journey that led us to our project's completio!
+              </p>
+          </div>
+          <br>
+        </header>
+
+<p class="muted-text">
+                Introducing the Pencil Pusher: The AI Short Story Generator! Our group had built various models that generate short stories based off of six genres: fantasy, horror, fairy tale, humor (Dr. Seuss), and sci-fi. Each of our models use a variety of databases based off of which genre is chosen, to create a short story for you!
+              </p>
+          </div>
+          <br>
+            <div>
+              <div class="bg-light bg-opacity-50 py-2">
+                <div class="container">
+
+              <p class="muted-text">
+                Our group had used the programming languages Python, CSS, HTML, and the transformer GPT-2, as well as datasets that we found on Google and Kaggle.
+              </p>
                 </div>
             </div>
-        </section>
-       <!-- Portfolio Grid-->
-        <section class="page-section" id="portfolio" style="background-color:#d7effa;">
+          </div>
+        </header> !-->
+      <!--PORTFOLIO BIT-->
+      <section class="page-section bg-light" id="portfolio">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Our Team</h2>
-                    <h3 class="section-subheading text-muted">Meet the creators of this generator!</h3>
+                    <h2 class="section-heading text-uppercase">Frequently Asked Questions</h2>
                 </div>
                 <div class="row">
-                        <div class="row">
                     <div class="col-lg-4 col-sm-6 mb-4">
                         <!-- Portfolio item 1-->
                         <div class="portfolio-item">
@@ -94,12 +90,11 @@
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" src="static/assets/img/portfolio/andrew_img.jpg" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Andrew Swafford</div>
-                                <div class="portfolio-caption-subheading text-muted">Team Leader</div>
+                                <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading" style="color: #212529;">What is AI?</div>
                             </div>
+                            </a>
+                            
                         </div>
                     </div>
                     <div class="col-lg-4 col-sm-6 mb-4">
@@ -109,12 +104,10 @@
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" src="static/assets/img/portfolio/ciel_img.jpg" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Ciel Nanasca</div>
-                                <div class="portfolio-caption-subheading text-muted">Designer</div>
+                              <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading" style="color: #212529;">What is NLP?</div>
                             </div>
+                            </a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-sm-6 mb-4">
@@ -124,12 +117,10 @@
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" src="static/assets/img/portfolio/nogah_img.jpg" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Nogah Lustig</div>
-                                <div class="portfolio-caption-subheading text-muted">Full-Stack Developer</div>
+                              <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading" style="color: #212529;">What is Python?</div>
                             </div>
+                            </a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
@@ -139,12 +130,11 @@
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" src="static/assets/img/portfolio/eli_img.jpg" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Elijah Ozawa</div>
-                                <div class="portfolio-caption-subheading text-muted">Design Developer</div>
+                                <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading" style="color: #212529;">What is GPT-2?</div>
                             </div>
+                            </a>
+                            
                         </div>
                     </div>
                     <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
@@ -154,12 +144,11 @@
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" src="static/assets/img/portfolio/rihana_img.jpg" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Rihana Abdulvahid</div>
-                                <div class="portfolio-caption-subheading text-muted">User Experience Developer</div>
+                                <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading" style="color: #212529;">What are HTML and CSS?</div>
                             </div>
+                            </a>
+                            
                         </div>
                     </div>
                     <div class="col-lg-4 col-sm-6">
@@ -169,21 +158,96 @@
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" src="static/assets/img/portfolio/bryan.png" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Bryan Leong</div>
-                                <div class="portfolio-caption-subheading text-muted">Frontend Developer</div>
+                                <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading" style="color: #212529;">What Inspired this Project?</div>
                             </div>
+                            </a>
+                            
                         </div>
                     </div>
                 </div>
             </div>
-              <br>
-              <br>
-                    <p style="text-align:center;">
-                      Thank you to Ethan, our group supervisor. You've worked so hard to help us get to this point and we're proud to have you as our mentor. If it wasn’t for you, we never would have made it here.
-                    </p>
+        </section>
+        <!-- About-->
+        <section class="page-section" id="about">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Our Journey</h2>
+                </div>
+                <ul class="timeline">
+                    <li>
+                        <div class="timeline-image"><i class="fa-brands fa-python img-journey" style="width: 65%; height:auto; position: relative; top: 10%;"></i></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>#1</h4>
+                                <h4 class="subheading">Learning Python:</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">Our group began by learning the basics of python and data analysis. We worked to utilize different python libraries to modify texts and data sources to fit our needs. </p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image"><i class="fas fa-book img-journey" style="width: 65%; height:auto; position: relative; top: 10%;"></i></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>#2</h4>
+                                <h4 class="subheading">Studying AI:</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">We then moved forwards into studying AI itself and its workings. In this stage we watched many presentations about neural networks and different types of text generation AI's. We researched the model we would eventually use, the GPT-2/Neo transformer.</p></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-image"><i class="fa-solid fa-soap img-journey" style="width: 65%; height:auto; position: relative; top: 10%;"></i></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>#3</h4>
+                                <h4 class="subheading">Data Cleaning:</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">Finally, we began to prepare our ten different datasets from various resources for training the models. We were required to modify the file types and filter out useless information that could skew Pencil Pusher's generation.</p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image"><i class="fa-solid fa-bone img-journey" style="width: 65%; height:auto; position: relative; top: 20%;"></i></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>#4</h4>
+                                <h4 class="subheading">Training the Models:</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">Pencil Pusher was nearing fruition as its five different AIs were trained individuially on different datasets to make up our project's five different genre options. This major step to completion was important and took about a week and quite a bit of patience.</p></div>
+                        </div>
+                    </li>
+                  <li>
+                        <div class="timeline-image"><i class="fa-solid fa-computer img-journey" style="width: 65%; height:auto; position: relative; top: 20%;"></i></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>#5</h4>
+                                <h4 class="subheading">Website:</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">With the models trained and our code complete, all that was left was to make the website and present the information well. As you the reader can hopefully see; our website turned out great!</p></div>
+                        </div>
+                    </li>
+                  <li class="timeline-inverted">
+                        <div class="timeline-image"><i class="fa-solid fa-eye img-journey" style="width: 65%; height:auto; position: relative; top: 20%;"></i></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>#6</h4>
+                                <h4 class="subheading">The Future:</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">We hope to eventually introduce more genres to Pencil Pusher and help it reach more and more audiences in the future. In addition to this story length could also be improved and expanded, as could the amount of data the GPT-2/Neo models have access to.</p></div>
+                        </div>
+                    </li>
+                  <li class="timeline-inverted">
+                        <div class="timeline-image">
+                          <h4>
+                            Thanks
+                            <br>
+                            for
+                            <br>
+                            reading!
+                          </h4>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </section>
         <!-- Contact-->
         <section class="page-section" id="contact">
@@ -261,19 +325,17 @@
         <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
-                    
+                    <!--<div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>-->
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project details-->
-                                    <h2 class="text-uppercase">Andrew Swafford</h2>
-                                    <br>
-                                    <p>Hi, I'm Andrew Swafford, but I go by Andy. I am a rising junior in Glenda Dawson High School. My favorite color is green, and I am interested in coding and robotics. In my free time I like to practice my instrument and debate. I helped format and code the website, train three of the models, prepare the data, and organize the team.</p>
-                                    <p>
-                                      ᕙ( •̀ ᗜ •́ )ᕗ
-                                    </p>
+                                    <h2 class="text-uppercase">What is AI?</h2>
+                                    <p>AI or Artificial Intelligence is a type of technology that is able to mirror the functions of humans. For example, a machine that is considered an AI, is able to think much like a regular person. They can also be used to make complex decisions, or even write text similar to a person! </p>
+
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
                                         Close
                                     </button>
                                 </div>
@@ -287,19 +349,16 @@
         <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
-                    
+                    <!--<div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>-->
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project details-->
-                                    <h2 class="text-uppercase">Ciel Nanasca</h2>
-                                    <br>
-                                    <p>Hey! I'm Chelsea Nanasca or Ciel, and I am a rising 10th grader at John F. Kennedy Highschool. In my free time, I enjoy talking to friends, practicing my instrument, and also trying out many various skills and hobbies. I enjoy creating and hearing about analysis on various things, and I also enjoy art. And, in this project I integrated those by helping out with designing the website, writing, and programming.</p>
-                                    <p>
-                                      ヾ(＾-＾)ノ
-                                    </p>
+                                    <h2 class="text-uppercase">What is NLP?</h2>
+                                    <p>NLP or Natural Language Processing is the ability of a computer program to understand and process human language. Our class had specialized in this, and we had used our knowledge on this to create our models.</p>
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
                                         Close
                                     </button>
                                 </div>
@@ -313,21 +372,16 @@
         <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
-                    
+                    <!--<div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>-->
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project details-->
-                                    <h2 class="text-uppercase">Nogah Lustig</h2>
-                                    
-                                    <br>
-                                    <p>Hello! I'm Nogah Lustig, a rising 9th grader. I just finished Middle School, and my favorite color is blue--black is a close second. I’m interested in learning more about human social-emotional behaviors and I enjoy playing my trumpet. In my free time I read books, watch T.V. with my family, or play games with my friends. I helped with programming, preprocessing the data, designing/coding the website, and assisting my teammates for this project.</p>
-                                  <p>
-                                     (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧
-                                  </p>
-                                    
+                                    <h2 class="text-uppercase">What is Python?</h2>
+                                    <p>Python is a programming language that can be used for a variety of things, such as building websites. We used this to program our models.</p>
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
                                         Close
                                     </button>
                                 </div>
@@ -341,20 +395,16 @@
         <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
-                    
+                   <!--<div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>-->
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project details-->
-                                    <h2 class="text-uppercase">Elijah Ozawa</h2>
-                                    
-                                    <br>
-                                    <p>Hey I'm Elijah Ozawa but I go by Eli for short. I am going onto my last year of middle school and I am very hyped about it. I love to play hockey competitively and I also love to play video games. I play the piano and I love to eat food. My favorite color is navy blue. In my free time, I try to plan out what I am going to do with my day or I go and play some games. What I helped with the project was that I helped with the design process.</p>
-                                    <p>
-                                      (⌐▨_▨)
-                                    </p>
+                                    <h2 class="text-uppercase">What is GPT-2?</h2>
+                                    <p>GPT-2, which stands for Generative Pre-Trained Transformer 2, is a model that has been trained using 40 GB of data, from the internet. It is used for text prediction, and we had used this to train our models.</p>
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
                                         Close
                                     </button>
                                 </div>
@@ -368,20 +418,17 @@
         <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
-                    
+                    <!--<div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>-->
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project details-->
-                                    <h2 class="text-uppercase">Rihana Abdulvahid</h2>
-                                    
-                                    <br>
-                                    <p>Hi, I'm Rihana Abdulvahid, and I'm a rising 10th grader at Evergreen Valley High School. My hobbies include drawing/painting, playing my instrument, reading, and crafting, basically anything creative! For this project, I helped with training the AI models, preprocessing the data, and designing the website.</p>
-                                    <p>
-                                      ⸜(｡˃ ᵕ ˂ )⸝
-                                    </p>
+                                    <h2 class="text-uppercase">What are HTML and CSS?</h2>
+                                    <p>HTML, or Hypertext Markup Language is a system that is used to structure pages on the internet, as well as the content in those pages. CSS is a system that is used to design a website and is used to change the appearance of a website. In other words, HTML is the base of a website while CSS is used to decorate it.</p>
+                                    <ul class="list-inline">
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
                                         Close
                                     </button>
                                 </div>
@@ -395,20 +442,17 @@
         <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
-                    
+                    <!--<div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>-->
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project details-->
-                                    <h2 class="text-uppercase">Bryan Leong</h2>
-                                    
-                                    <br>
-                                    <p>Hi, I’m Bryan Leong, a rising 9th grader. I just finished middle school and I like to play video games. My favorite color is orange and I mostly don’t know what to do in my free time. For this project, I helped with training the AI models.</p>
-                                    <p>
-                                      ٩(｡•́‿•̀｡)۶
-                                    </p>
+                                    <h2 class="text-uppercase">What Inspired this Project?</h2>
+                                    <p>Our team was inspired to create this AI by our common problems found in writing. We discovered that we—in addition to many others in the writing community—sometimes suffered from writer's block. We decided to help with that issues by creating Pencil Pusher: The AI Short Story Generator. Our project uses a medley of sources in a variety of genres to allow for the most unique ideas to be presented. From our Sci Fi AI's usage of complex words, to our Fairy Tale AI's understanding of morals, our project helps with word flow and creativity with ease.
+</p>
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
                                         Close
                                     </button>
                                 </div>

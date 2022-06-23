@@ -1,0 +1,172 @@
+@charset "UTF-8";
+/*!
+* Start Bootstrap - Stylish Portfolio v6.0.4 (https://startbootstrap.com/theme/stylish-portfolio)
+* Copyright 2013-2021 Start Bootstrap
+* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-stylish-portfolio/blob/master/LICENSE)
+*/
+/*!
+ * Bootstrap v5.1.3 (https://getbootstrap.com/)
+ * Copyright 2011-2021 The Bootstrap Authors
+ * Copyright 2011-2021 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ */
+:root {
+  --bs-blue: #1D809F;
+  --bs-indigo: #6610f2;
+  --bs-purple: #6f42c1;
+  --bs-pink: #d63384;
+  --bs-gray: #6c757d;
+  --bs-gray-dark: #343a40;
+  --bs-gray-100: #f8f9fa;
+  --bs-red: #dc3545;
+  --bs-orange: #fd7e14;
+  --bs-yellow: #ecb807;
+  --bs-green: #198754;
+  --bs-teal: #20c997;
+  --bs-cyan: #0dcaf0;
+  --bs-white: #fff;
+  --bs-gray-200: #e9ecef;
+  --bs-gray-300: #dee2e6;
+  --bs-gray-400: #ced4da;
+  --bs-gray-500: #adb5bd;
+  --bs-gray-600: #6c757d;
+  --bs-gray-700: #495057;
+  --bs-gray-800: #343a40;
+  --bs-gray-900: #212529;
+  --bs-primary: #1D809F;
+  --bs-secondary: #ecb807;
+  --bs-success: #198754;
+  --bs-info: #0dcaf0;
+  --bs-warning: #ecb807;
+  --bs-danger: #dc3545;
+  --bs-light: #f8f9fa;
+  --bs-dark: #212529;
+  --bs-primary-rgb: 29, 128, 159;
+  --bs-secondary-rgb: 236, 184, 7;
+  --bs-success-rgb: 25, 135, 84;
+  --bs-info-rgb: 13, 202, 240;
+  --bs-warning-rgb: 236, 184, 7;
+  --bs-danger-rgb: 220, 53, 69;
+  --bs-light-rgb: 248, 249, 250;
+  --bs-dark-rgb: 33, 37, 41;
+  --bs-white-rgb: 255, 255, 255;
+  --bs-black-rgb: 0, 0, 0;
+  --bs-body-color-rgb: 33, 37, 41;
+  --bs-body-bg-rgb: 255, 255, 255;
+  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+  --bs-body-font-family: Source Sans Pro, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  --bs-body-font-size: 1rem;
+  --bs-body-font-weight: 400;
+  --bs-body-line-height: 1.5;
+  --bs-body-color: #212529;
+  --bs-body-bg: #fff;
+}
+
+
+/** Image Formatting **/
+
+.logo{    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%
+}
+
+/** Button **/
+
+.button{
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+/** About Us Section **/
+.about-us{
+    width: 80%
+    margin: none;
+}
+
+.about-us .blurbs{
+    border: 3px solid red;
+    padding: 20px;
+    margin: 20px;
+}
+
+/**#blurb1{
+    float: left;
+    width: 33.33%;
+}
+
+#blurb2{
+    float: top;
+    width: 33.33%;
+}
+
+#blurb3{
+    float: right;
+    width: 33.33%;
+}**/
+
+/** #blurb4{
+	float: right;
+    width: 33.33%;
+}
+
+#blurb5{
+	float: right;
+	width: 33.33%;
+}
+
+#blurb6{
+	float: right;
+	width: 33.33%;
+} **/
+
+
+
+
+
+
+
+
+
+/* THIS IS FORMS HERE */
+.margin1{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.contact-us h2{
+    text-align:center;
+}
+
+.contact-us{
+    padding: 20px;
+}
+
+.contact-us .form-item{
+     padding: 15px;
+}
+
+.contact-us label{
+    display:block;
+    color: gray;
+    font-size: 120%;
+}
+
+.contact-us input[type="text"], .my-form textarea{
+    padding: 10px;
+    width: 100%;
+}
+
+.contact-us input[type="email"]{
+    padding: 10px;
+    width: 100%;
+}

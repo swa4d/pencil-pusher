@@ -19,16 +19,21 @@ from flask import Flask, request, redirect, url_for, render_template, session
 from utils import get_base_url
 # import stuff for our models
 from aitextgen import aitextgen
+import random
 
 # load up a model from memory. Note you may not need all of these options.
 # ai = aitextgen(model_folder="model/",
 #                tokenizer_file="model/aitextgen.tokenizer.json", to_gpu=False)
 
-ai = aitextgen(model="distilgpt2", to_gpu=False)
+ai1 = aitextgen(model_folder="fairytale_model/", to_gpu=False)
+ai2 = aitextgen(model_folder="scifi_model/", to_gpu=False)
+ai3 = aitextgen(model_folder="humor_model/", to_gpu=False)
+#ai4 = aitextgen(model_folder="horror_model/", to_gpu=False)
+ai5 = aitextgen(model_folder="fantasy_model/", to_gpu=False)
 
 # setup the webserver
 # port may need to be changed if there are multiple flask servers running on same server
-port = 12345
+port = 12347
 base_url = get_base_url(port)
 
 
@@ -45,7 +50,7 @@ app.secret_key = os.urandom(64)
 
 @app.route(f'{base_url}')
 def home():
-    return render_template('writer_home.html', generated=None)
+    return render_template('index.html', generated=None)
 
 
 @app.route(f'{base_url}', methods=['POST'])
@@ -57,9 +62,17 @@ def home_post():
 def results():
     if 'data' in session:
         data = session['data']
-        return render_template('Write-your-story-with-AI.html', generated=data)
+        return render_template('try_it.html', generated=data)
     else:
-        return render_template('Write-your-story-with-AI.html', generated=None)
+        return render_template('try_it.html', generated=None)
+
+@app.route(f'{base_url}/about-project/')
+def about_proj():
+    if 'data' in session:
+        data = session['data']
+        return render_template('about-project.html', generated=data)
+    else:
+        return render_template('about-project.html', generated=None)
 
 
 @app.route(f'{base_url}/generate_text/', methods=["POST"])
@@ -69,13 +82,31 @@ def generate_text():
     """
 
     prompt = request.form['prompt']
+    genre = request.form['genre']
+    wc = request.form['wordcount']
+    intwc = float(round(wc))
+    aiToGen = ""
+    if wc is None:
+        intwc = 200
+    elif intwc < 50 or intwc > 600:
+        intwc = 200
+    if genre == "Fairytale":
+        aiToGen = ai1
+    elif genre == "Sci-Fi":
+        aiToGen = ai2
+    elif genre == "Dr. Seuss":
+        aiToGen = ai3
+    elif genre == "Horror":
+        aiToGen = ai4
+    elif genre == "Fantasy":
+        aiToGen = ai5
     if prompt is not None:
-        generated = ai.generate(
+        generated = aiToGen.generate(
             n=1,
             batch_size=3,
             prompt=str(prompt),
-            max_length=300,
-            temperature=0.9,
+            max_length=intwc,
+            temperature=0.7,
             return_as_list=True
         )
 
@@ -92,7 +123,7 @@ def generate_text():
 
 if __name__ == '__main__':
     # IMPORTANT: change url to the site where you are editing this file.
-    website_url = 'coding.ai-camp.dev'
+    website_url = 'cocalc5.ai-camp.dev'
 
     print(f'Try to open\n\n    https://{website_url}' + base_url + '\n\n')
     app.run(host='0.0.0.0', port=port, debug=True)

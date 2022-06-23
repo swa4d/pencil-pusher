@@ -1,0 +1,21 @@
+(base) ]0;~/pencil-pusher/app[01;34m~/pencil-pusher/app[00m$ python3 -m app
+Traceback (most recent call last):
+  File "/projects/c9629bb3-4d79-48fd-b3d8-772cd3ffb6ab/miniconda3/lib/python3.9/runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/projects/c9629bb3-4d79-48fd-b3d8-772cd3ffb6ab/miniconda3/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/projects/c9629bb3-4d79-48fd-b3d8-772cd3ffb6ab/pencil-pusher/app/app.py", line 1, in <module>
+    from flask import Flask
+ModuleNotFoundError: No module named 'flask'
+(base) ]0;~/pencil-pusher/app[01;34m~/pencil-pusher/app[00m$ py5thon [K[K[K[K[K[Kthon -m app
+Traceback (most recent call last):
+  File "/projects/c9629bb3-4d79-48fd-b3d8-772cd3ffb6ab/miniconda3/lib/python3.9/runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/projects/c9629bb3-4d79-48fd-b3d8-772cd3ffb6ab/miniconda3/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/projects/c9629bb3-4d79-48fd-b3d8-772cd3ffb6ab/pencil-pusher/app/app.py", line 1, in <module>
+    from flask import Flask
+ModuleNotFoundError: No module named 'flask'
+(base) ]0;~/pencil-pusher/app[01;34m~/pencil-pusher/app[00m$ color green
+bash: color: command not found
+(base) ]0;~/pencil-pusher/app[01;34m~/pencil-pusher/app[00m$ asdasdsdsddsdsddddddddddddddd(base) ]0;~/pencil-pusher/app[01;34m~/pencil-pusher/app[00m$ (base) ]0;~/pencil-pusher/app[01;34m~/pencil-pusher/app[00m$ [K(base) ]0;~/pencil-pusher/app[01;34m~/pencil-pusher/app[00m$ 

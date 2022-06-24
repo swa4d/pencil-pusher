@@ -28,7 +28,7 @@ import random
 ai1 = aitextgen(model_folder="fairytale_model/", to_gpu=False)
 ai2 = aitextgen(model_folder="scifi_model/", to_gpu=False)
 ai3 = aitextgen(model_folder="humor_model/", to_gpu=False)
-# ai4 = aitextgen(model_folder="horror_model/", to_gpu=False)
+ai4 = aitextgen(model_folder="horror_model/", to_gpu=False)
 ai5 = aitextgen(model_folder="fantasy_model/", to_gpu=False)
 
 # setup the webserver
